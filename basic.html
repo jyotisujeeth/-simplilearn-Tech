@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            background-color: yellow;
+        }
+        .abc{
+            width: 300px;
+            height: 40px;
+            border-radius: 10px;
+        }
+    
+    </style>
+    <script>
+        function login(){
+            var fn=document.getElementById('fn').value;
+            var ln=document.getElementById('ln').value;
+            var fullname = fn +" : "+ ln;
+                document.getElementById('full').value=fullname;
+        }
+    </script>
+</head>
+<body>
+        <div style="text-align: center;margin-top: 100px ;">
+                <h1> Hi Welcome to Java Script </h1>
+                <h2>
+                   <form>
+                    Enter First Name : <input type="text" id="fn" class="abc"><br>
+                    Enter Last Name  : <input type="text" id="ln" class="abc" ><br>
+                    Full Name  : <input type="text" id="full" class="abc" ><br>
+                    <br><input type="button"  value="LOGIN" class="btn btn-success" onclick="login()">
+                    <input type="reset"  value="RESET" class="btn btn-danger">
+                   </form>
+                </h2>
+        </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: yellow;
+        }
+        .abc{
+            width: 300px;
+            height: 40px;
+            border-radius: 10px;
+        }
+        .btn{
+            width: 120px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: deepskyblue;
+        }
+        .btn:hover{
+            width: 130px;
+            height: 42px;
+            border-radius: 10px;
+            background-color: blue;
+            color: red;
+        }
+    </style>
+    <script>
+        function login(){
+            var name=document.getElementById('uname').value;
+            var pass=document.getElementById('upass').value;
+           details = name + pass;
+           alert(details)
+        }
+    </script>
+</head>
+<body>
+        <div style="text-align: center;margin-top: 100px ;">
+                <h1> Hi Welcome to Java Script </h1>
+                <h2>
+                   <form>
+                    User name : <input type="text" id="uname" class="abc" autocomplete="on"><br>
+                    User pass : <input type="password" id="upass" class="abc" autocomplete="on"><br>
+                    <br><input type="submit"  value="LOGIN" class="btn" onclick="login()">
+                    <input type="reset"  value="RESET" class="btn">
+                   </form>
+                </h2>
+
+
+        </div>
+</body>
+</html>
